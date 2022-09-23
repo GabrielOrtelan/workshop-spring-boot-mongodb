@@ -16,4 +16,17 @@ public class UserService {
     public List<User> findAll(){
         return repo.findAll();
     }
+
+    public User findById(String id){
+        //FindOne ou FindByID (Não consegui implementar)
+       List<User> users = repo.findAll();
+       User user = users.stream()
+               .filter(x -> id.equals(x.getId()))
+               .findFirst()
+               .orElse(null);
+       if (user == null){
+           throw new RuntimeException("Objeto não encontrado");
+       }
+       return user;
+    }
 }
