@@ -1,6 +1,7 @@
 package com.gabrielortelan.workshopmongo.services;
 
 import com.gabrielortelan.workshopmongo.domain.User;
+import com.gabrielortelan.workshopmongo.dto.UserDTO;
 import com.gabrielortelan.workshopmongo.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -28,5 +29,13 @@ public class UserService {
            throw new RuntimeException("Objeto não encontrado");
        }
        return user;
+    }
+
+    public User insert(User obj){
+        return repo.insert(obj);
+    }
+
+    public User fromDTO(UserDTO objDTO){
+        return new User(objDTO.getId(), objDTO.getName(), objDTO.getEmail());
     }
 }
