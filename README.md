@@ -1,4 +1,9 @@
-PROJETO EM SPRING BOOT E MONGODB
-<br>
-Projeto realizado no curso Dev Superior, aonde foi utilizado Java, SpringBoot e MongoDB para criação de uma API de forum,
-aonde os usuarios podem criar Posts e outros usuários possam comentar os posts
+# <p align = "center"> <b> PROJETO SPRING BOOT  </b>
+
+O objetivo é criar um sistema de forum, aonde possa ser criado usuários, esses usuários podem criar posts e comentar em posts de outros .
+  
+## 🛠 Ferramentas Utilizadas
+* Git
+* Java
+* Intellij
+* SpringBoot
