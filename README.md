@@ -3,7 +3,6 @@
 O objetivo é criar um sistema de forum, aonde possa ser criado usuários, esses usuários podem criar posts e comentar em posts de outros .
   
 ## 🛠 Ferramentas Utilizadas
-* Git
 * Java
-* Intellij
 * SpringBoot
+* MongoDB
